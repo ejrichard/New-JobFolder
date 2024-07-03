@@ -14,3 +14,7 @@ Job numbers are the four digit year followed by a three digit incrementing count
 For example, the first job of 2023 would be 2023-001.
 
 Upon running the script, the user will be prompted to enter the job number.  The script will offer a guess as to what the next job number should be based on the contents of the JobFolderLocation variable.  Press 'Enter' to accept the guess.
+
+# Powershell Security
+
+PowerShell's Execution Policy might prevent the script from running.  Setting the execution policy to RemoteSigned is a decent compromise.  Open PowerShell as an administrator and run this command: `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine`
